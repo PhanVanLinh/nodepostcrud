@@ -82,6 +82,7 @@ app.put('/posts/:id', async (req, res) => {
   res.status(200).send({"data": { "message": "Update post successfully"}})
 })
 
-app.listen(3000, function() {
-	console.log("Listen on 3000")
+const port = process.env.PORT || 3000
+app.listen(port, function() {
+	console.log("Listen on "+port)
 });
