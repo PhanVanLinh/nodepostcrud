@@ -21,6 +21,10 @@ const file = join(__dirname, 'db.json')
 const adapter = new JSONFile(file)
 const db = new Low(adapter)
 
+app.get('/', async (req, res) => {
+  res.send("Hello, tried /posts enpoint")
+})
+
 app.get('/posts', async (req, res) => {
   await db.read()
   const { posts } = db.data 
