@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "lowdb": "^3.0.0",
+    "uuid": "^8.3.2"
+  },
+  "name": "nodepostcrud",
+  "version": "1.0.0",
+  "exports": "./server.js",
+  "scripts": {
+    "start": "nodemon --ignore 'db.json' server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "type": "module"
+}
